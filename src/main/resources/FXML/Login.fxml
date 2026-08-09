@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginController">
+   <children>
+      <ImageView fitHeight="540.0" fitWidth="960.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/login_background.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="540.0" prefWidth="960.0" styleClass="background" stylesheets="@../Styles/loginStyle.css">
+         <children>
+            <!-- Main Title - UNCHANGED -->
+            <Text fill="WHITE" layoutX="391.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UNIVERSITY DORMITORY ADMINISTRATION" textAlignment="RIGHT" wrappingWidth="568.94921875" style="-fx-font-size: 58px;">
+               <font>
+                  <Font name="Segoe UI Black" size="64.0" />
+               </font>
+            </Text>
+            
+            <!-- Login Container Box -->
+            <StackPane layoutX="50.0" layoutY="100.0" prefWidth="350.0" prefHeight="400.0" styleClass="login-container">
+               <children>
+                  <VBox spacing="25" alignment="CENTER" styleClass="login-container">
+                     <padding>
+                        <Insets top="40" right="30" bottom="40" left="30" />
+                     </padding>
+                     
+                     <!-- Login Title -->
+                     <Text fill="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Log In to Your Account" styleClass="login-title">
+                        <font>
+                           <Font name="Segoe UI Semibold" size="20.0" />
+                        </font>
+                     </Text>
+                     
+                     <!-- Username Field Container -->
+                     <VBox spacing="8" alignment="CENTER">
+                        <TextField fx:id="txt_username" prefHeight="40.0" prefWidth="280.0" promptText="Username" styleClass="text-field">
+                           <font>
+                              <Font name="Segoe UI Semilight" size="15.0" />
+                           </font>
+                        </TextField>
+                     </VBox>
+                     
+                     <!-- Password Field Container - Fixed Position -->
+                     <VBox spacing="8" alignment="CENTER">
+                        <StackPane prefHeight="40.0" prefWidth="280.0">
+                           <children>
+                              <PasswordField fx:id="txt_password" prefHeight="40.0" prefWidth="280.0" promptText="Password" styleClass="password-field">
+                                 <font>
+                                    <Font name="Segoe UI Semilight" size="15.0" />
+                                 </font>
+                              </PasswordField>
+                              <TextField fx:id="txt_pword" prefHeight="40.0" prefWidth="280.0" promptText="Password" styleClass="text-field" visible="false">
+                                 <font>
+                                    <Font name="Segoe UI Semilight" size="15.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </StackPane>
+                     </VBox>
+                     
+                     <!-- Show Password Checkbox -->
+                     <HBox alignment="CENTER_LEFT" spacing="10">
+                        <CheckBox fx:id="pass_toggle" mnemonicParsing="false" onAction="#togglevisiblePassword" text="Show Password" textFill="#030039" styleClass="check-box">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <font>
+                              <Font name="SansSerif Regular" size="12.0" />
+                           </font>
+                        </CheckBox>
+                     </HBox>
+                     
+                     <!-- Login Button - Fixed Position -->
+                     <VBox alignment="CENTER" spacing="0">
+                        <Button fx:id="btn_signIn" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#signInButtonAction" prefHeight="45.0" prefWidth="280.0" styleClass="signIn" text="Log In" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Semibold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </VBox>
+                  </VBox>
+               </children>
+            </StackPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

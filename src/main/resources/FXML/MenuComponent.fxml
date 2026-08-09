@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MenuComponentController">
+   <children>
+      <!-- Background Image -->
+      <ImageView fitHeight="540.0" fitWidth="960.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/secbg.jpg" />
+         </image>
+      </ImageView>
+      
+      <!-- Gradient Overlay -->
+      <Rectangle width="960.0" height="540.0" fill="linear-gradient(to bottom right, rgba(37, 102, 229, 0.1), rgba(26, 48, 70, 0.2))" />
+      
+      <Pane prefHeight="540.0" prefWidth="960.0" styleClass="menu-container" stylesheets="@../Styles/menucomponent.css">
+         <children>
+            <!-- Header Section -->
+            <VBox layoutX="0.0" layoutY="20.0" prefWidth="960.0" alignment="CENTER" spacing="10">
+               <!-- Main Title -->
+               <Text fill="#1a3046" strokeType="OUTSIDE" strokeWidth="0.0" text="University Dormitory Administration" textAlignment="CENTER" styleClass="menu-title">
+                  <font>
+                     <Font name="Segoe UI Black" size="32.0" />
+                  </font>
+               </Text>
+               
+               <!-- Subtitle -->
+               <Text fill="#2566E5" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Management Option" textAlignment="CENTER" styleClass="menu-title">
+                  <font>
+                     <Font name="Segoe UI Semibold" size="18.0" />
+                  </font>
+               </Text>
+               
+               <!-- Decorative Line -->
+               <Rectangle width="200.0" height="3.0" fill="#2566E5" style="-fx-effect: dropshadow(gaussian, rgba(37, 102, 229, 0.5), 3, 0, 0, 1);" />
+            </VBox>
+            
+            <!-- Main Content Area -->
+            <HBox layoutX="80.0" layoutY="150.0" spacing="60" alignment="CENTER">
+               <!-- Manage Students Card -->
+               <StackPane prefWidth="350.0" prefHeight="300.0" styleClass="card-container">
+                  <children>
+                     <!-- Card Background -->
+                     <Rectangle width="350.0" height="300.0" arcWidth="20.0" arcHeight="20.0" fill="linear-gradient(to bottom right, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.9))" stroke="#2566E5" strokeWidth="1.0" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0, 0, 8);" />
+                     
+                     <VBox alignment="CENTER" spacing="20" styleClass="card-container">
+                        <padding>
+                           <Insets top="30" right="20" bottom="30" left="20" />
+                        </padding>
+                        
+                        <!-- Student Icon -->
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/S.png" />
+                           </image>
+                        </ImageView>
+                        
+                        <!-- Button -->
+                        <Button id="btn" fx:id="btn_student" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#student_btn_clicked" prefHeight="60.0" prefWidth="280.0" text="MANAGE STUDENTS" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        
+                        <!-- Description -->
+                        <Text fill="#666666" strokeType="OUTSIDE" strokeWidth="0.0" text="Add, edit, and manage student records" textAlignment="CENTER" wrappingWidth="280.0">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </Text>
+                     </VBox>
+                  </children>
+               </StackPane>
+               
+               <!-- Manage Employees Card -->
+               <StackPane prefWidth="350.0" prefHeight="300.0" styleClass="card-container">
+                  <children>
+                     <!-- Card Background -->
+                     <Rectangle width="350.0" height="300.0" arcWidth="20.0" arcHeight="20.0" fill="linear-gradient(to bottom right, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.9))" stroke="#2566E5" strokeWidth="1.0" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0, 0, 8);" />
+                     
+                     <VBox alignment="CENTER" spacing="20" styleClass="card-container">
+                        <padding>
+                           <Insets top="30" right="20" bottom="30" left="20" />
+                        </padding>
+                        
+                        <!-- Employee Icon -->
+                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/E.png" />
+                           </image>
+                        </ImageView>
+                        
+                        <!-- Button -->
+                        <Button id="btn" fx:id="btn_employee" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#employee_btn_clicked" prefHeight="60.0" prefWidth="280.0" text="MANAGE EMPLOYEES" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        
+                        <!-- Description -->
+                        <Text fill="#666666" strokeType="OUTSIDE" strokeWidth="0.0" text="Add, edit, and manage employee records" textAlignment="CENTER" wrappingWidth="280.0">
+                           <font>
+                              <Font name="Segoe UI" size="12.0" />
+                           </font>
+                        </Text>
+                     </VBox>
+                  </children>
+               </StackPane>
+            </HBox>
+            
+            <!-- Log Out Button -->
+            <Button id="btn_back" fx:id="btn_back" layoutX="820.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#back_btn_clicked" prefHeight="40.0" prefWidth="120.0" text="Log Out">
+               <font>
+                  <Font name="Segoe UI Semibold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            
+
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

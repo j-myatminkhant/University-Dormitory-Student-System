@@ -1,0 +1,249 @@
+/*
+ * Modern Aesthetic Sidebar Styles
+ */
+
+/* Main page background */
+.root {
+    -fx-background-color: #4A5568;
+}
+
+/* Main container styling */
+.sidebar-container {
+    -fx-background-color: #0c2951;
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(35, 47, 105, 0.3), 15, 0, 0, 8);
+    -fx-border-radius: 20px;
+    -fx-border-color: rgba(255, 255, 255, 0.2);
+    -fx-border-width: 1px;
+}
+
+/* Modern sidebar button styling with specified colors */
+#sidebar_btn {
+    -fx-background-color: #2e5995;
+    -fx-text-fill: WHITE;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-border-color: transparent;
+    -fx-border-width: 0px;
+    -fx-effect: dropshadow(gaussian, rgba(35, 47, 105, 0.3), 15, 0, 0, 8);
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease;
+}
+
+#sidebar_btn:hover {
+    -fx-background-color: #00FFFF;
+    -fx-text-fill: #0c2951;
+    -fx-effect: dropshadow(gaussian, rgba(23, 75, 193, 0.4), 12, 0, 0, 5);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+#sidebar_btn:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+/* Back button styling */
+#btn_back {
+    -fx-background-radius: 15px;
+    -fx-background-color: #2e5995;
+    -fx-text-fill: WHITE;
+    -fx-effect: dropshadow(gaussian, rgba(37, 102, 229, 0.3), 5, 0, 0, 2);
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease;
+}
+
+#btn_back:hover {
+    -fx-background-color: #00FFFF;
+    -fx-text-fill: #0c2951;
+    -fx-effect: dropshadow(gaussian, rgba(23, 75, 193, 0.4), 8, 0, 0, 3);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+/* General button styling */
+#btn {
+    -fx-background-color: #3182CE;
+    -fx-text-fill: WHITE;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-color: transparent;
+    -fx-border-width: 0px;
+    -fx-effect: dropshadow(gaussian, rgba(37, 102, 229, 0.3), 10, 0, 0, 5);
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease;
+}
+
+#btn:hover {
+    -fx-background-color: #2B6CB0;
+    -fx-text-fill: WHITE;
+    -fx-effect: dropshadow(gaussian, rgba(23, 75, 193, 0.4), 15, 0, 0, 8);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+/* Content area styling */
+.content-area {
+    -fx-background-color: #2e5995;
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0, 0, 8);
+    -fx-border-radius: 20px;
+    -fx-border-color: rgba(37, 102, 229, 0.2);
+    -fx-border-width: 1px;
+}
+
+/* Title styling */
+.sidebar-title {
+    -fx-fill: WHITE;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 3, 0, 0, 2);
+}
+
+/* Icon styling */
+.sidebar-icon {
+    -fx-fill: WHITE;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 2, 0, 0, 1);
+}
+
+/* Dashboard Styles */
+.dashboard-title {
+    -fx-fill: WHITE;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 2, 0, 0, 1);
+}
+
+.dashboard-subtitle {
+    -fx-fill: #A0AEC0;
+    -fx-effect: none;
+}
+
+/* Statistics Cards */
+.stat-card {
+    -fx-background-color: rgb(196, 199, 201);
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 5);
+    -fx-border-radius: 15px;
+    -fx-border-color: rgba(37, 102, 229, 0.3);
+    -fx-border-width: 2px;
+    -fx-pref-width: 300px;
+    -fx-pref-height: 200px;
+}
+
+
+
+.stat-value {
+    -fx-text-fill: BLACK;
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 1, 0, 0, 1);
+}
+
+.stat-label {
+    -fx-text-fill: BLACK;
+    -fx-font-size: 14px;
+    -fx-font-weight: normal;
+}
+
+/* Section Title */
+.section-title {
+    -fx-text-fill: WHITE;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 1, 0, 0, 1);
+}
+
+/* Form styling for student management */
+.text-field {
+    -fx-background-color: WHITE;
+    -fx-text-fill: BLACK;
+    -fx-prompt-text-fill: #666666;
+    -fx-border-color: #CCCCCC;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+}
+
+.text-field:focused {
+    -fx-border-color: #00FFFF;
+}
+
+.text-field:error {
+    -fx-border-color: RED;
+    -fx-background-color: WHITE;
+    -fx-text-fill: BLACK;
+}
+
+.label {
+    -fx-text-fill: WHITE;
+    -fx-font-weight: bold;
+}
+
+/* Form title styling */
+.form-title {
+    -fx-text-fill: WHITE;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-padding: 30 0 20 0;
+}
+
+/* Form container styling */
+.form-container {
+    -fx-padding: 20 20 10 20;
+    -fx-spacing: 15;
+}
+
+/* Button container styling */
+.button-container {
+    -fx-padding: 15 0 5 0;
+    -fx-alignment: center;
+}
+
+/* VBox styling for forms */
+.vbox {
+    -fx-spacing: 8;
+    -fx-padding: 5;
+}
+
+/* Reduce spacing in form VBoxes */
+.vbox .vbox {
+    -fx-spacing: 5;
+    -fx-padding: 3;
+}
+
+/* History Button Styling */
+#btn_history {
+    -fx-background-color: #1A2B40;
+    -fx-text-fill: WHITE;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-color: transparent;
+    -fx-border-width: 0px;
+    -fx-effect: dropshadow(gaussian, rgba(26, 43, 64, 0.3), 8, 0, 0, 4);
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease;
+    -fx-font-weight: bold;
+}
+
+#btn_history:hover {
+    -fx-background-color: #2C3E50;
+    -fx-text-fill: WHITE;
+    -fx-effect: dropshadow(gaussian, rgba(26, 43, 64, 0.5), 12, 0, 0, 6);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+#btn_history:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+/* Table Column Header Styling */
+.table-view .column-header .label {
+    -fx-text-fill: rgb(74, 69, 69);
+    -fx-font-weight: bold;
+}
+
+.table-view .column-header {
+    -fx-background-color: #F5F5F5;
+    -fx-text-fill: rgb(74, 69, 69);
+}

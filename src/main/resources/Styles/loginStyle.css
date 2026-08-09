@@ -1,0 +1,111 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 5, 2020, 3:01:14  PM
+    Author     : User
+*/
+
+/* Main page background */
+.root {
+    -fx-background-color: #1A2E44;
+}
+
+/* Login container box styling */
+.login-container {
+    -fx-background-color: #34495E;
+    -fx-background-radius: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 20, 0, 0, 10);
+    -fx-border-radius: 20px;
+    -fx-border-color: rgba(255, 255, 255, 0.3);
+    -fx-border-width: 1px;
+}
+
+.signIn {
+    -fx-background-radius: 20px !important;
+    -fx-background-color: #2566E5;
+    -fx-effect: dropshadow(gaussian, rgba(37, 102, 229, 0.4), 10, 0, 0, 5);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+.signIn:hover{
+    -fx-background-color: #1e5bd4;
+    -fx-effect: dropshadow(gaussian, rgba(37, 102, 229, 0.6), 15, 0, 0, 8);
+}
+
+/* Text field styling */
+.text-field {
+    -fx-background-color: #2C3E50;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-border-color: #5D7185;
+    -fx-border-width: 2px;
+    -fx-padding: 12px 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0, 0, 2);
+    -fx-text-fill: #E0E6EB;
+    -fx-prompt-text-fill: #A0AEBC;
+}
+
+.text-field:focused {
+    -fx-border-color: #5BC0DE;
+    -fx-effect: dropshadow(gaussian, rgba(37, 102, 229, 0.3), 8, 0, 0, 3);
+    -fx-background-color: #2C3E50;
+}
+
+/* Password field styling */
+.password-field {
+    -fx-background-color: #2C3E50;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-border-color: #5D7185;
+    -fx-border-width: 2px;
+    -fx-padding: 12px 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 5, 0, 0, 2);
+    -fx-text-fill: #E0E6EB;
+    -fx-prompt-text-fill: #A0AEBC;
+}
+
+.password-field:focused {
+    -fx-border-color: #5BC0DE;
+    -fx-effect: dropshadow(gaussian, rgba(37, 102, 229, 0.3), 8, 0, 0, 3);
+    -fx-background-color: #2C3E50;
+}
+
+/* Checkbox styling */
+.check-box {
+    -fx-text-fill: #E0E6EB;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+.check-box .box {
+    -fx-background-color: #2C3E50;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #5D7185;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 3, 0, 0, 1);
+}
+
+.check-box:selected .box {
+    -fx-background-color: #5BC0DE;
+    -fx-border-color: #5BC0DE;
+}
+
+/* Login title styling */
+.login-title {
+    -fx-fill: #E0E6EB;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 2, 0, 0, 1);
+    -fx-transition: none;
+}
+
+/* Line styling */
+.input-line {
+    -fx-stroke: #5BC0DE;
+    -fx-stroke-width: 2px;
+    -fx-effect: dropshadow(gaussian, rgba(37, 102, 229, 0.3), 3, 0, 0, 1);
+}
